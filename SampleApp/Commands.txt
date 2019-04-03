@@ -1,0 +1,6 @@
+﻿Add-Migration init -Context DDBDBContext
+Update-Database -Context DDBDBContext
+Add-Migration initExceptionDBContext -Context ExceptionDBContext
+Update-Database -Context ExceptionDBContext
+Add-Migration init -Context DDBDBContext
+Add-Migration initExceptionDBContext -Context ExceptionDBContext
