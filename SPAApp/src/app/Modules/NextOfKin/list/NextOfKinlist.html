@@ -1,0 +1,36 @@
+<div class="horizontal-scroll">
+  <table class="table table-bordered">
+    <thead>
+    <tr>     
+            <th class="align-right">NextOfKinID</th>
+		            <th class="align-right">NokName</th>
+		            <th class="align-right">NokRelationshipCode</th>
+		            <th class="align-right">NokAddressLine1</th>
+		            <th class="align-right">NokAddressLine2</th>
+		            <th class="align-right">NokAddressLine3</th>
+		            <th class="align-right">NokAddressLine4</th>
+		            <th class="align-right">NokPostcode</th>
+		            <th class="align-right">FkPatientID</th>
+				<th class="align-right">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+	<tr *ngFor="let item of listNextOfKin" (click)="onSelect(item)">
+
+				<td class="align-right">{{ item.NextOfKinID }}</td>
+					<td class="align-right">{{ item.NokName }}</td>
+					<td class="align-right">{{ item.NokRelationshipCode }}</td>
+					<td class="align-right">{{ item.NokAddressLine1 }}</td>
+					<td class="align-right">{{ item.NokAddressLine2 }}</td>
+					<td class="align-right">{{ item.NokAddressLine3 }}</td>
+					<td class="align-right">{{ item.NokAddressLine4 }}</td>
+					<td class="align-right">{{ item.NokPostcode }}</td>
+					<td class="align-right">{{ item.FkPatientID }}</td>
+				<td class="align-right">
+<button ngClass="{status-button btn btn-xs btn-primary" (click)="onSelect(item)"><i class="ion-edit"></i></button>          
+<button ngClass="{status-button btn btn-xs btn-danger" (click)="onDelete(item)"><i class="ion-trash-a"></i></button>
+        </td>
+    </tr>     
+    </tbody>
+  </table>
+</div>

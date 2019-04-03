@@ -1,0 +1,31 @@
+<div class="horizontal-scroll">
+  <div>
+    <!--PageSize:{{pagesize}}, PageNo:{{page}}-->
+    
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th class="align-right">PasNumber</th>
+        <th class="align-right">Forenames</th>
+        <th class="align-right">Surname</th>
+        <th class="align-right">DateOfBirth</th>
+        <th class="align-right">NokName</th>
+        <th class="align-right">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listPatient">
+        <td class="align-right">{{ item.FkBasic.PasNumber }}</td>
+        <td class="align-right">{{ item.FkBasic.Forenames }}</td>
+        <td class="align-right">{{ item.FkBasic.Surname }}</td>
+        <td class="align-right">{{ item.FkBasic.DateOfBirth }}</td>
+        <td class="align-right">{{ item.FkNextOfKin.NokName }}</td>
+        <td class="align-right">
+          <button ngClass="{status-button btn btn-xs btn-primary" (click)="onSelect(item)"><i class="fa fa-pencil-square-o">edit</i></button>
+          <button ngClass="{status-button btn btn-xs btn-danger" (click)="onDelete(item)"><i class="fa fa-trash-o"></i>delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,13 @@
+
+<Search (notifySearch)="onSearch($event)"></Search>
+<button ngClass="{status-button btn btn-xs btn-primary" (click)="addNew()"><i class="ion-edit">Add New</i></button>
+<button ngClass="{status-button btn btn-xs btn-primary" (click)="showList()"><i class="ion-edit">Show List</i></button>
+<div *ngIf="objPatient && showform==true">
+  <Patient-Form [objPatient]="objPatient" (notify)='onNotify($event)'>
+  </Patient-Form>
+</div>
+
+<div *ngIf="listPatient  && showform==false">
+  <Patient-List [listPatient]="listPatient" (notifySelect)="onSelect($event)" (notifyDelete)="onDelete($event)">
+  </Patient-List>
+</div>

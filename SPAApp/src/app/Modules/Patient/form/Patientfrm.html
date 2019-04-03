@@ -1,0 +1,10 @@
+
+<Basic-Form [objBasic]="objPatient.FkBasic" (notify)='onNotify($event)'>
+</Basic-Form>
+<NextOfKin-Form [objNextOfKin]="objPatient.FkNextOfKin" (notify)='onNotify($event)'>
+</NextOfKin-Form>
+<GpDetail-List-Form [listGpDetail]="objPatient.GpDetailList">
+</GpDetail-List-Form>
+<button type="submit" class="btn btn-primary" (click)="onSave()">Save</button>
+<button type="button" class="btn btn-warning" (click)="onCancel()">Cancel</button>
+

@@ -1,0 +1,29 @@
+<div class='form-group row'>
+  <label for='inputPasNumber' class='col-sm-2 form-control-label'>Pas Number</label>
+  <div class='col-sm-4'><input type='text' class='form-control' id='inputPasNumber' [(ngModel)]='objBasic.PasNumber' placeholder='PasNumber'></div>
+  <label for='inputForenames' class='col-sm-2 form-control-label'>Forenames</label>
+  <div class='col-sm-4'><input type='text' class='form-control' id='inputForenames' [(ngModel)]='objBasic.Forenames' placeholder='Forenames' mvalidation
+    entName="basic" fieldName="Forenames"></div>
+
+</div>
+
+<div class='form-group row'>
+  <label for='inputSurname' class='col-sm-2 form-control-label'>Surname</label>
+  <div class='col-sm-4'><input type='text' class='form-control' id='inputSurname' [(ngModel)]='objBasic.Surname' placeholder='Surname'></div>
+  <label for='inputDateOfBirth' class='col-sm-2 form-control-label'>Date Of Birth</label>
+  <div class="input-group datepicker-input col-sm-4">
+    <input class="form-control" placeholder="yyyy-mm-dd" (ngModelChange)="onDateOfBirth($event)"
+           name="dp" [(ngModel)]="DateOfBirthNg" ngbDatepicker #dDateOfBirt="ngbDatepicker">
+    <button class="input-group-addon" (click)="dDateOfBirt.toggle()" type="button">
+      <span class="fa fa-calendar"></span>
+    </button>
+  </div>
+</div>
+
+<div class='form-group row'>
+  <label for='inputSexCode' class='col-sm-2 form-control-label'>Sex Code</label>
+  <div class='col-sm-4'><input type='text' class='form-control' id='inputSexCode' [(ngModel)]='objBasic.SexCode' placeholder='Sex Code'></div>
+  <label for='inputHomeTelephoneNumber' class='col-sm-2 form-control-label'>Telephone Number</label>
+  <div class='col-sm-4'><input type='text' class='form-control' id='inputHomeTelephoneNumber' [(ngModel)]='objBasic.HomeTelephoneNumber' placeholder='Home Telephone Number'></div>
+</div>
+

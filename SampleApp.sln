@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "SampleApp\SampleApp.csproj", "{237EB643-8AA5-4AC4-ABEB-17DF7B4CEDE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Madyan.Data", "Dependencies\Madyan.Data\Madyan.Data.csproj", "{F2672534-D742-4B72-AD40-CC3BFB97D685}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Madyan.Data.Context", "Dependencies\Madyan.Data.Context\Madyan.Data.Context.csproj", "{3D41F419-E6FB-40C3-ABED-460DCAA66B34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Madyan.Data.Exception", "Dependencies\Madyan.Data.Exception\Madyan.Data.Exception.csproj", "{ABFDD217-E158-4FF0-8B93-5CBF2AF8E87A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Madyan.Data.Validation", "Dependencies\Madyan.Data.Validation\Madyan.Data.Validation.csproj", "{3050B5C0-9944-4D28-9003-E74486CCED6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Madyan.Repo", "Dependencies\Madyan.Repo\Madyan.Repo.csproj", "{A03DC9EA-89F7-48EC-8B43-6167E30B18E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{237EB643-8AA5-4AC4-ABEB-17DF7B4CEDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{237EB643-8AA5-4AC4-ABEB-17DF7B4CEDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{237EB643-8AA5-4AC4-ABEB-17DF7B4CEDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{237EB643-8AA5-4AC4-ABEB-17DF7B4CEDE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2672534-D742-4B72-AD40-CC3BFB97D685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2672534-D742-4B72-AD40-CC3BFB97D685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2672534-D742-4B72-AD40-CC3BFB97D685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2672534-D742-4B72-AD40-CC3BFB97D685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D41F419-E6FB-40C3-ABED-460DCAA66B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D41F419-E6FB-40C3-ABED-460DCAA66B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D41F419-E6FB-40C3-ABED-460DCAA66B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D41F419-E6FB-40C3-ABED-460DCAA66B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFDD217-E158-4FF0-8B93-5CBF2AF8E87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFDD217-E158-4FF0-8B93-5CBF2AF8E87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFDD217-E158-4FF0-8B93-5CBF2AF8E87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFDD217-E158-4FF0-8B93-5CBF2AF8E87A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3050B5C0-9944-4D28-9003-E74486CCED6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3050B5C0-9944-4D28-9003-E74486CCED6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3050B5C0-9944-4D28-9003-E74486CCED6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3050B5C0-9944-4D28-9003-E74486CCED6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03DC9EA-89F7-48EC-8B43-6167E30B18E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03DC9EA-89F7-48EC-8B43-6167E30B18E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03DC9EA-89F7-48EC-8B43-6167E30B18E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03DC9EA-89F7-48EC-8B43-6167E30B18E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F02A8012-8A9D-4DCB-B883-F53EC0575898}
+	EndGlobalSection
+EndGlobal

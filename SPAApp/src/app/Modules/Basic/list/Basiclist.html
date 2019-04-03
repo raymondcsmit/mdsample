@@ -1,0 +1,34 @@
+<div class="horizontal-scroll">
+  <table class="table table-bordered">
+    <thead>
+    <tr>     
+            <th class="align-right">BasicID</th>
+		            <th class="align-right">PasNumber</th>
+		            <th class="align-right">Forenames</th>
+		            <th class="align-right">Surname</th>
+		            <th class="align-right">DateOfBirth</th>
+		            <th class="align-right">SexCode</th>
+		            <th class="align-right">HomeTelephoneNumber</th>
+		            <th class="align-right">FkPatientID</th>
+				<th class="align-right">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+	<tr *ngFor="let item of listBasic" (click)="onSelect(item)">
+
+				<td class="align-right">{{ item.BasicID }}</td>
+					<td class="align-right">{{ item.PasNumber }}</td>
+					<td class="align-right">{{ item.Forenames }}</td>
+					<td class="align-right">{{ item.Surname }}</td>
+					<td class="align-right">{{ item.DateOfBirth }}</td>
+					<td class="align-right">{{ item.SexCode }}</td>
+					<td class="align-right">{{ item.HomeTelephoneNumber }}</td>
+					<td class="align-right">{{ item.FkPatientID }}</td>
+				<td class="align-right">
+<button ngClass="{status-button btn btn-xs btn-primary" (click)="onSelect(item)"><i class="ion-edit"></i></button>          
+<button ngClass="{status-button btn btn-xs btn-danger" (click)="onDelete(item)"><i class="ion-trash-a"></i></button>
+        </td>
+    </tr>     
+    </tbody>
+  </table>
+</div>

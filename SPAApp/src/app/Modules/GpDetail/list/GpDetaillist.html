@@ -1,0 +1,30 @@
+<div class="horizontal-scroll">
+  <table class="table table-bordered">
+    <thead>
+    <tr>     
+            <th class="align-right">GpDetailID</th>
+		            <th class="align-right">GpCode</th>
+		            <th class="align-right">GpSurname</th>
+		            <th class="align-right">GpInitials</th>
+		            <th class="align-right">GpPhone</th>
+		            <th class="align-right">FkPatientID</th>
+				<th class="align-right">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+	<tr *ngFor="let item of listGpDetail" (click)="onSelect(item)">
+
+				<td class="align-right">{{ item.GpDetailID }}</td>
+					<td class="align-right">{{ item.GpCode }}</td>
+					<td class="align-right">{{ item.GpSurname }}</td>
+					<td class="align-right">{{ item.GpInitials }}</td>
+					<td class="align-right">{{ item.GpPhone }}</td>
+					<td class="align-right">{{ item.FkPatientID }}</td>
+				<td class="align-right">
+<button ngClass="{status-button btn btn-xs btn-primary" (click)="onSelect(item)"><i class="fa fa-pencil-square-o">edit</i></button>          
+<button ngClass="{status-button btn btn-xs btn-danger" (click)="onDelete(item)"><i class="fa fa-trash-o"></i>delete</button>
+        </td>
+    </tr>     
+    </tbody>
+  </table>
+</div>

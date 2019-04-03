@@ -1,0 +1,21 @@
+				
+		
+
+  		<div class='form-group row'> <label for='inputGpCode' class='col-sm-2 form-control-label'>GpCode</label><div class='col-sm-10'><input type='text' class='form-control' id='inputGpCode' [(ngModel)]='objGpDetail.GpCode'  placeholder='GpCode'></div></div>
+		
+
+  		<div class='form-group row'> <label for='inputGpSurname' class='col-sm-2 form-control-label'>GpSurname</label><div class='col-sm-10'><input type='text' class='form-control' id='inputGpSurname' [(ngModel)]='objGpDetail.GpSurname'  placeholder='GpSurname'></div></div>
+		
+
+  		<div class='form-group row'> <label for='inputGpInitials' class='col-sm-2 form-control-label'>GpInitials</label><div class='col-sm-10'><input type='text' class='form-control' id='inputGpInitials' [(ngModel)]='objGpDetail.GpInitials'  placeholder='GpInitials'></div></div>
+		
+
+  		<div class='form-group row'> <label for='inputGpPhone' class='col-sm-2 form-control-label'>GpPhone</label><div class='col-sm-10'><input type='text' class='form-control' id='inputGpPhone' [(ngModel)]='objGpDetail.GpPhone'  placeholder='GpPhone'></div></div>
+		
+
+  		<div class='form-group row'> <label for='inputFkPatientID' class='col-sm-2 form-control-label'>FkPatientID</label><div class='col-sm-10'><select class='form-control' [(ngModel)]='objGpDetail.FkPatientID'><option [value]='item.FkPatientID' *ngFor='let item of listPatient'> {{item.FkPatientID}}</option></select>    </div></div>
+		
+
+   <button type="submit" class="btn btn-primary" (click)="onSave()">Submit</button>
+  <button type="button" class="btn btn-warning" (click)="onCancel()">Cancel</button>
+

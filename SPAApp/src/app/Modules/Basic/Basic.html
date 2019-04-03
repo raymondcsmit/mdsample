@@ -1,0 +1,8 @@
+<div *ngIf="objBasic">
+    <Basic-Form [objBasic]="objBasic" (notify)='onNotify($event)'>
+    </Basic-Form>
+</div>
+<div *ngIf="listBasic">
+    <Basic-List [listBasic]="listBasic" (notifySelect)="onSelect($event)" (notifyDelete)="onDelete($event)">
+    </Basic-List>
+</div>

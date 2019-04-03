@@ -1,0 +1,43 @@
+<h1>Advance Search</h1>
+<table *ngIf="searchModel" class="table table-bordered">
+  <thead>
+    <tr>
+      <th class="align-right">Property</th>
+      <th class="align-right">Action</th>
+      <th class="align-right">Value</th>
+      <th class="align-right">OPerator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of searchModel">
+      <td class="align-right">
+        <select class="form-control col-sm-3" [(ngModel)]="item.property">
+          <option hidden [value]="" selected>Select Property</option>
+          <option [value]="property" *ngFor="let property of listProperties"> {{property}}</option>
+        </select>
+      </td>
+      <td class="align-right">
+        <select class="form-control col-sm-3" [(ngModel)]="item.action">
+          <option hidden [value]="" selected>Select Action</option>
+          <option [value]="action" *ngFor="let action of listAction"> {{action}}</option>
+        </select>
+      </td>
+      <td class="align-right"><input class="col-sm-3" [(ngModel)]="item.value"></td>
+      <td class="align-right">
+        <select class="form-control col-sm-3" [(ngModel)]="item.logical_operator">
+          <option hidden [value]="" selected>Select Operator</option>
+          <option [value]="operator" *ngFor="let operator of listOperator"> {{operator}}</option>
+        </select>
+      </td>
+
+
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+<div>
+  <button ngClass="{status-button btn btn-xs btn-primary" (click)="addNew()"><i class="ion-edit">Add New</i></button>
+  <button ngClass="{status-button btn btn-xs btn-primary" (click)="search()"><i class="ion-edit">Search</i></button>
+</div>

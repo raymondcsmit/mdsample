@@ -1,0 +1,30 @@
+<div class="horizontal-scroll">
+  <button type="submit" class="btn btn-primary" (click)="addNew()">Add New GP</button>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+
+        <th class="align-right">GpCode</th>
+        <th class="align-right">GpSurname</th>
+        <th class="align-right">GpInitials</th>
+        <th class="align-right">GpPhone</th>
+
+        <th class="align-right">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let objGpDetail of listGpDetail">
+
+        <td class="align-right"><input type='text' class='form-control' id='inputGpCode' [(ngModel)]='objGpDetail.GpCode' placeholder='Gp Code'></td>
+        <td class="align-right"><input type='text' class='form-control' id='inputGpSurname' [(ngModel)]='objGpDetail.GpSurname' placeholder='Gp Surname'></td>
+        <td class="align-right"><input type='text' class='form-control' id='inputGpInitials' [(ngModel)]='objGpDetail.GpInitials' placeholder='Gp Initials'></td>
+        <td class="align-right"><input type='text' class='form-control' id='inputGpPhone' [(ngModel)]='objGpDetail.GpPhone' placeholder='Gp Phone'></td>
+
+        <td class="align-right">
+          <button ngClass="{status-button btn btn-xs btn-primary" (click)="onSave(objGpDetail)"><i class="fa fa-pencil-square-o">edit</i></button>
+          <button ngClass="{status-button btn btn-xs btn-danger" (click)="onCancel(objGpDetail)"><i class="fa fa-trash-o">cancel</i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

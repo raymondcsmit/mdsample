@@ -1,0 +1,8 @@
+<div *ngIf="objNextOfKin">
+    <NextOfKin-Form [objNextOfKin]="objNextOfKin" (notify)='onNotify($event)'>
+    </NextOfKin-Form>
+</div>
+<div *ngIf="listNextOfKin">
+    <NextOfKin-List [listNextOfKin]="listNextOfKin" (notifySelect)="onSelect($event)" (notifyDelete)="onDelete($event)">
+    </NextOfKin-List>
+</div>
